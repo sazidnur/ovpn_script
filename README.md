@@ -9,7 +9,7 @@
 
 # OpenVpn Automatic Setup Script with Docker
 
-Copy the script to your sevrer, change chmod to +x to script, run the script with arguments like your public IP (generally in VPN case we use public IP, you can provide local IP if you want for local net), port, profile name. It will setup automatcially a VPN server with docker, also it will provide a .ovpn file in the same folder where the script is located. This script will add automatic turn on whenever you start server or restart. 
+Copy the script to your server, change the chmod to +x for the script, then run the run.sh script with arguments such as your public IP (in the case of a VPN, we generally use the public IP, but you can provide a local IP if you want it for a local network), port, and profile name. It will automatically set up a VPN server with Docker, and it will also generate a .ovpn file in the same folder where the script is located. This script will enable automatic activation whenever you start or restart the server.
 
 ## Commands:
 
@@ -21,16 +21,17 @@ Copy the script to your sevrer, change chmod to +x to script, run the script wit
 
 ```./run.sh 111.222.333.444 1194 ProfileName```
 
-Provide all the necessary information while running the script. After successful run, check the same folder where the script is located. You will find a file anmes ProfileName.ovpn, copy this file to your machine where you want to use this vpn by email, qr code or filserver software like WinSCP, FileZilla. Install OpenVPN Client software, open you .ovpn file and connect. Hurray you just setup your own VPN.
+Provide all the necessary information when running the script. After a successful run, check the same folder where the script is located. You will find a file named ProfileName.ovpn. Copy this file via email, QR code, or file server software like WinSCP or FileZilla to your machine where you intend to use this VPN. Install the OpenVPN Client software, open your .ovpn file, and connect. Congratulations, you have just set up your own VPN.
 
-Possible Troubleshoot:
-Check docker status on your server by ```docker ps```
-If your docker is not running check docker log or check docker-compose file for re-ensuring the location of the conf file macth in server and docker-compose
-Check you server firewall for open port and other configs.
+## Possible Troubleshooting Steps:
+
+- Check the Docker status on your server by using the command ```docker ps```
+- If your Docker is not running, check the Docker logs or review the docker-compose file to ensure the location of the configuration file matches between the server and docker-compose.
+- Check your server's firewall for open ports and other configurations.
 
 ## Use in multiple device simultaneously
 
-To use in multiple device simultaneousl, I would prefer separate profile, otherwise you can face disconnet and auto re-connect issue. To add another profile use add_new.sh script. Tt's same process, create new script, change chmod, run it and send profile name as argument while running.
+To use the VPN on multiple devices simultaneously, I would recommend creating separate profiles; otherwise, you may experience disconnects and automatic reconnections. To add another profile, use the add_new.sh script. The process is the same: create a new script, change its permissions with chmod, run it, and provide the profile name as an argument while running.
 
 ## Commands
 
