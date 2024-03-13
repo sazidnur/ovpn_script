@@ -19,3 +19,17 @@ Possible Troubleshoot:
 Check docker status on your server by ```docker ps```
 If your docker is not running check docker log or check docker-compose file for re-ensuring the location of the conf file macth in server and docker-compose
 Check you server firewall. 
+
+## Use in multiple device simultaneously
+
+To use in multiple device simultaneousl, I would prefer separate profile, otherwise you can face disconnet and auto re-connect issue. To add another profile use add_new.sh script. Tt's same process, create new script, change chmod, run it and send profile name as argument while running.
+
+## Commands
+
+```nano add_new.sh```
+
+```sudo chmod +x add_new.sh```
+
+```./add_new.sh ProfileName2```
+
+Now copy your new PofileName2.ovpn file to desired device and use it by OpenVPN Client
