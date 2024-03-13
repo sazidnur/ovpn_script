@@ -9,7 +9,7 @@
 
 # OpenVpn Automatic Setup Script with Docker
 
-Copy the script to your sevrer, change chmod to +x to script, run the script with arguments, it will setup automatcially a vpn server with docker, it will provide a .ovpn file in the same folder where the script is located and it will add schedule turn on whenever you start server or restart. 
+Copy the script to your sevrer, change chmod to +x to script, run the script with arguments like your public IP (generally in VPN case we use public IP, you can provide local IP if you want for local net), port, profile name. It will setup automatcially a VPN server with docker, also it will provide a .ovpn file in the same folder where the script is located. This script will add automatic turn on whenever you start server or restart. 
 
 ## Commands:
 
@@ -19,14 +19,14 @@ Copy the script to your sevrer, change chmod to +x to script, run the script wit
 
 ```sudo chmod +x run.sh```
 
-```./run.sh 111.222.333.444 8000 ProfileName```
+```./run.sh 111.222.333.444 1194 ProfileName```
 
 Provide all the necessary information while running the script. After successful run, check the same folder where the script is located. You will find a file anmes ProfileName.ovpn, copy this file to your machine where you want to use this vpn by email, qr code or filserver software like WinSCP, FileZilla. Install OpenVPN Client software, open you .ovpn file and connect. Hurray you just setup your own VPN.
 
 Possible Troubleshoot:
 Check docker status on your server by ```docker ps```
 If your docker is not running check docker log or check docker-compose file for re-ensuring the location of the conf file macth in server and docker-compose
-Check you server firewall. 
+Check you server firewall for open port and other configs.
 
 ## Use in multiple device simultaneously
 
