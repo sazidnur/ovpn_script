@@ -1,13 +1,10 @@
-<table>
-  <tr>
-    <td><a href="https://github.com/sazidnur/ovpn_script/stargazers"><img src="https://img.shields.io/github/stars/sazidnur/ovpn_script?style=social&label=Stars" alt="GitHub stars"></a></td>
-    <td><a href="https://github.com/sazidnur/ovpn_script/network/members"><img src="https://img.shields.io/github/forks/sazidnur/ovpn_script?style=social&label=Forks" alt="GitHub forks"></a></td>
-    <td><a href="https://github.com/sazidnur/ovpn_script/issues"><img src="https://img.shields.io/github/issues/sazidnur/ovpn_script.svg" alt="GitHub issues"></a></td>
-    <td><a href="https://github.com/sazidnur/ovpn_script/pulls"><img src="https://img.shields.io/github/issues-pr/sazidnur/ovpn_script.svg" alt="GitHub pull requests"></a></td>
-    <td><a href="https://github.com/sazidnur/ovpn_script/blob/master/LICENSE"><img src="https://img.shields.io/github/license/sazidnur/ovpn_script.svg" alt="GitHub license"></a></td>
-    <td><a href="https://github.com/sazidnur/ovpn_script"><img src="https://visitor-badge.glitch.me/badge?page_id=sazidnur.ovpn_script" alt="GitHub visitors"></a></td>
-  </tr>
-</table>
+[![GitHub stars](https://img.shields.io/github/stars/sazidnur/ovpn_script?style=social&label=Stars)](https://github.com/sazidnur/ovpn_script/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/sazidnur/ovpn_script?style=social&label=Forks)](https://github.com/sazidnur/ovpn_script/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/sazidnur/ovpn_script.svg)](https://github.com/sazidnur/ovpn_script/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sazidnur/ovpn_script.svg)](https://github.com/sazidnur/ovpn_script/pulls)
+[![GitHub license](https://img.shields.io/github/license/sazidnur/ovpn_script)](https://github.com/sazidnur/ovpn_script/blob/main/LICENSE)
+[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=sazidnur.ovpn_script)](https://github.com/sazidnur/ovpn_script)
+
 
 
 # OpenVpn Automatic Setup Script with Docker
